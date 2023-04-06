@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NewGoalsActivity">
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/menu_drop"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Select Activity"
+            android:padding="3dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/drop_items"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:inputType="none" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </TableRow>
+
+
+    <EditText
+        android:id="@+id/EdtIdActSelect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Enter Activity Select" />
+
+
+    <EditText
+        android:id="@+id/EdtIdStepCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:inputType="numberSigned"
+        android:hint="Enter Step Count" />
+
+
+    <EditText
+        android:id="@+id/EdtIdMyDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        android:hint="Enter Date" />
+
+
+    <Button
+        android:id="@+id/RoomGoal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:text="Save Goal"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/UpdateGoal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:text="Update Goal"
+        android:visibility="gone"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/DeleteGoal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:text="Delete Goal"
+        android:visibility="gone"
+        android:textAllCaps="false" />
+
+
+
+
+</LinearLayout>

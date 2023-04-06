@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".HistoryRVTask">
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/history_menu_drop"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:hint="Select Activity"
+                    android:padding="3dp">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/history_drop_items"
+                            android:layout_width="350dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:inputType="none" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+        </TableRow>
+
+
+        <EditText
+            android:id="@+id/history_ActSect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Enter Activity Select" />
+
+
+        <EditText
+            android:id="@+id/history_StepCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:inputType="numberSigned"
+            android:hint="Enter Target Step Count" />
+
+
+        <EditText
+            android:id="@+id/history_ExtraStepCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:inputType="numberSigned"
+            android:hint="Enter Extra Step Count" />
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+                <Button
+                    android:id="@+id/DateBtn"
+                    android:layout_height="wrap_content"
+                    android:layout_width="120dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="set date"
+                    android:visibility="visible"
+
+                    />
+
+                <TextView
+                    android:id="@+id/history_Date"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:visibility="visible"
+                    android:layout_marginLeft="80dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    />
+
+        </TableRow>
+
+
+
+        <Button
+            android:id="@+id/history_SaveRoomGoal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:text="Save Goal"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/history_UpdateGoal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:text="Update Goal"
+            android:visibility="gone"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/DeleteGoal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:text="Delete Goal"
+            android:visibility="gone"
+            android:textAllCaps="false" />
+
+</LinearLayout>
+
+
+
+

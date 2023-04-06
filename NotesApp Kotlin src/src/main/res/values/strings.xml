@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">NoteKT</string>
+    <string name="add">ADD</string>
+    <string name="title">Title</string>
+    <string name="Do_You_Want_to_Delete_Note">Do You Want to Delete This Note</string>
+    <string name="Yes">YES</string>
+    <string name="No">No</string>
+    <string name="Deleting_Note">Deleting Note...?</string>
+</resources>

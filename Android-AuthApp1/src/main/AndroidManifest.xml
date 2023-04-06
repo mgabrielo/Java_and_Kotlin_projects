@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.authtest.authapp1">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AuthApp1">
+        <activity
+            android:name=".AuthType.PhoneUpdate"
+            android:exported="false"
+            android:theme="@style/Theme.AuthApp.NoActionBar"/>
+        <activity
+            android:name=".AuthType.PassUpdate"
+            android:exported="false"
+            android:theme="@style/Theme.AuthApp.NoActionBar" />
+        <activity
+            android:name=".AuthType.EmojiAuths"
+            android:exported="false"
+            android:theme="@style/Theme.AuthApp.NoActionBar" />
+        <activity
+            android:name=".OTP_Code"
+            android:exported="false"
+            android:theme="@style/Theme.AuthApp.NoActionBar" />
+        <activity
+            android:name=".OTP"
+            android:exported="false"
+            android:theme="@style/Theme.AuthApp.NoActionBar" />
+        <activity
+            android:name=".Register"
+            android:exported="false"
+            android:theme="@style/Theme.AuthApp.NoActionBar" />
+        <activity
+            android:name=".LogIn"
+            android:exported="true"
+            android:theme="@style/Theme.AuthApp.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="authapp1-85cbd.web.app"
+                    android:scheme="https" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="authapp1.page.link"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AuthApp.NoActionBar" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
